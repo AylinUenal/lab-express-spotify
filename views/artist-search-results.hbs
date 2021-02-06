@@ -1,0 +1,16 @@
+<body class="search-results">
+
+    {{!-- {{data.body.artists.items[0].name}} --}}
+
+    {{!-- items is an array, loop over it to display the name of each album: --}}
+    {{#each artists}}
+    <h1>{{this.name}}</h1>
+    <a href="/albums/someArtistIdGoesHere">View Albums</a>
+    {{#each this.images }}
+    <img src="{{this.url}}" width="{{this.width}}" height="{{this.height}}" alt="image of artist">
+    {{/each}}
+    {{/each}}
+
+
+
+</body>

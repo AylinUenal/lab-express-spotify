@@ -1,0 +1,10 @@
+.btn-search-artist {
+    padding: 10px;
+    background-color: red;
+    color: white;
+}
+
+body.main {
+    background: url("/images/spotify-background.jpeg") no-repeat;
+    background-size: cover;
+}
