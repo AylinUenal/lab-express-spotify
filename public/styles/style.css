@@ -1,10 +1,84 @@
-.btn-search-artist {
-    padding: 10px;
-    background-color: red;
-    color: white;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 body.main {
-    background: url("/images/spotify-background.jpeg") no-repeat;
-    background-size: cover;
+  background: url("/images/spotify-background.jpeg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-form-container {
+  width: 500px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255 255 255 / 33%);
+  padding: 50px;
+}
+
+.search-form input {
+  width: 300px;
+  height: 25px;
+  margin: 5px;
+}
+
+.btn-search-artist {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.artists-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.artists-box {
+  margin: 0 auto;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.artists-box img {
+  width: 90%;
+  margin: 20px auto 0;
+  height: 300px;
+  display: block;
+}
+
+.btn-view-albums {
+  padding: 10px;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.artists-box-bottom {
+  background-color: #4d4d4d;
+  width: 90%;
+  margin: 0 auto;
+  height: 143px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.artists-box-bottom h2 {
+  margin: 0;
+  color: white;
+  font-weight: normal;
+  padding-top: 5px;
 }

@@ -1,16 +1,18 @@
 <body class="search-results">
+    <div class="artists-box-container">
 
-    {{!-- {{data.body.artists.items[0].name}} --}}
 
-    {{!-- items is an array, loop over it to display the name of each album: --}}
-    {{#each artists}}
-    <h1>{{this.name}}</h1>
-    <a href="/albums/someArtistIdGoesHere">View Albums</a>
-    {{#each this.images }}
-    <img src="{{this.url}}" width="{{this.width}}" height="{{this.height}}" alt="image of artist">
-    {{/each}}
-    {{/each}}
-
+        {{!-- artists is an array, loop over it to display the name etc of each album: --}}
+        {{#each artists}}
+        <div class="artists-box">
+            <img src="{{this.images.[0].url}}" alt="image of artist">
+            <div class="artists-box-bottom">
+                <h2>{{this.name}}</h2>
+                <a class="btn-view-albums" href="/albums/someArtistIdGoesHere">View Albums</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
 
 
 </body>
